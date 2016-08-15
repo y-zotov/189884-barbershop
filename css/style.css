@@ -1,16 +1,90 @@
 html,
 body {
-  font-family: PT Sans Narrow, Arial, Serif;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 24px;
 	font-weight: bold;
 }
+/*body {
+	background: url("/img/barbershop-shop.png") no-repeat 50% 0;
+	background-size: 1200px auto;
+}*/
+
 h1{
+	margin-top: 41px;
 	font-size: 30px;
 	line-height: 42px;
+	text-transform: uppercase;
 }
 .main-navigation {
 	font-size: 16px;
 	line-height: 20px;
-	color: #ffffff;
+	width: 640px;
+	float: left;
+	min-height: 72px;
+}
+.main-header {
+	min-height: 72px;
+}
+.container {
+	width: 940px;
+	margin: 0 auto;
+}
+.logo-block {
+	float: left;
+	width: 160px;
+	min-height: 72px;
+}
+.user-block {
+	float: right;
+	min-height: 72px;
+	width: 140px;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.main-navigation li {
+	display: inline-block;
+}
+.breadcrumbs li {
+	display: inline-block
+}
+.care-form {
+	float: left;
+	width: 220px;
+}
+.catalog {
+	float: right;
+	width: 720px;
+	
+}
+.catalog-item {
+	margin-left: 18px;
+	display: inline-block;
+	
+}
+.pagination {
+	clear: both;
+	min-height: 43px;
+}
+.main-footer {
+	margin-top: 49px;
+	min-height: 189px;
+}
+.main-footer section {
+	display: inline-block;
+}
+.footer-contacts {
+	float: left;
+	width: 320px;
+}
+.footer-social {
+	width: 180px;
+	margin: 0 auto;
+}
+.footer-copyright {
+	float: right;
+	width: 320px;
 }

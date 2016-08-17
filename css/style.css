@@ -34,6 +34,7 @@ body {
 }
 .main-navigation li {
 	display: inline-block;
+	vertical-align: middle;
 }
 .logo-block {
 	float: left;
@@ -68,6 +69,7 @@ h1{
 }
 .breadcrumbs li {
 	display: inline-block;
+	vertical-align: top;
 	text-transform: uppercase;	
 }
 
@@ -132,24 +134,29 @@ h1{
 }
 
 /* для catalog.html */
+.catalog-box {
+	margin-bottom: 49px;
+}
 .select {
 	float: left;
 	width: 220px;
+	min-height: 680px;
 }
 .catalog {
 	float: right;
 	width: 720px;
 	font-size: 0;
+	min-height: 620px;
+	margin-bottom: 17px
 }
 .select, 
 .catalog {
-	min-height: 620px;
 	margin-top: 38px;
-	margin-bottom: 17px
 }
 .catalog-item {
 	margin-left: 20px;
 	display: inline-block;
+	vertical-align: top;
 	font-size: 14px;
 	min-height: 286px;
 	margin-bottom: 20px;
@@ -158,17 +165,14 @@ h1{
 	margin: 0;
 }
 .pagination {
-	clear: both;
+	float: right;
 	min-height: 43px;
 	width: 720px;
-	margin-left: 220px;
-	margin-bottom: 49px;
 }
 
 /* для catalog-item.html */
-.gallery,
-.desc {
-	margin-top: 39px;
+.item-box {
+	margin-top: 53px;
 	margin-bottom: 36px;
 }
 .gallery {
@@ -177,7 +181,24 @@ h1{
 }
 .desc {
 	float: right;
-	width: 400px;
+	width: 380px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-transform: uppercase
+}
+.avail {
+	padding-top: 5px;
+}
+.avail-item {
+	float: left;
+}
+.item-article {
+	float: right;
+}
+.price-buy p,
+.price-buy a {
+	display: inline-block;
+	vertical-align: middle;
 }
 .gallery-list {
 	padding: 0;
@@ -187,6 +208,7 @@ h1{
 }
 .gallery-item {
 	display: inline-block;
+	vertical-align: top;
 	margin-right: 20px;
 }
 .gallery-item:last-child {
@@ -219,6 +241,7 @@ h1{
 }
 .about-us p {
 	display: inline-block;
+	vertical-align: top;
 	width: 380px;
 }
 .about-us p:first-of-type {

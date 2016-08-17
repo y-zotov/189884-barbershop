@@ -49,9 +49,9 @@ body {
 
 /* общие */
 .clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
 .container {
 	width: 940px;

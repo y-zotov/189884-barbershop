@@ -4,31 +4,37 @@ body {
 	font-size: 14px;
 	line-height: 24px;
 	font-weight: bold;
+	padding: 0;
+	margin: 0;
 }
-/*body {
-	background: url("/img/barbershop-shop.png") no-repeat 50% 0;
-	background-size: 1200px auto;
-}*/
+body {
+	/*background: url("/img/_barbershop-index.jpg") no-repeat 50% 0;
+	background-size: 2560px auto;*/
+	background: url("/img/_barbershop-shop.jpg") no-repeat 50% 0;
+	background-size: 1200px auto;*/
+	/*background: url("/img/_barbershop-item.jpg") no-repeat 50% 0;
+	background-size: 1200px auto;*/
+	/*background: url("/img/_barbershop-price.jpg") no-repeat 50% 0;
+	background-size: 1200px auto;*/
+}
 
-h1{
-	margin-top: 41px;
-	font-size: 30px;
-	line-height: 42px;
-	text-transform: uppercase;
+/* header */
+.main-header {
+	min-height: 72px;
 }
 .main-navigation {
-	font-size: 16px;
 	line-height: 20px;
 	width: 640px;
 	float: left;
 	min-height: 72px;
 }
-.main-header {
-	min-height: 72px;
+.main-navigation ul {
+	font-size: 0;
 }
-.container {
-	width: 940px;
-	margin: 0 auto;
+.main-navigation li {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 16px;
 }
 .logo-block {
 	float: left;
@@ -40,51 +46,213 @@ h1{
 	min-height: 72px;
 	width: 140px;
 }
+
+/* общие */
 .clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
-.main-navigation li {
-	display: inline-block;
+.container {
+	width: 940px;
+	margin: 0 auto;
+}
+h1{
+	margin-top: 50px;
+	font-size: 30px;
+	line-height: 42px;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+.breadcrumbs {
+	padding-left: 0;
+	font-size: 0;
 }
 .breadcrumbs li {
-	display: inline-block
-}
-.care-form {
-	float: left;
-	width: 220px;
-}
-.catalog {
-	float: right;
-	width: 720px;
-	
-}
-.catalog-item {
-	margin-left: 18px;
 	display: inline-block;
-	
+	vertical-align: top;
+	text-transform: uppercase;	
+	font-size: 14px;
 }
-.pagination {
-	clear: both;
-	min-height: 43px;
-}
+
+/* footer */
 .main-footer {
-	margin-top: 49px;
+	clear: both;
 	min-height: 189px;
-}
-.main-footer section {
-	display: inline-block;
 }
 .footer-contacts {
 	float: left;
-	width: 320px;
+	width: 400px;
 }
 .footer-social {
-	width: 180px;
-	margin: 0 auto;
+	width: 140px;
+	float: left;
 }
 .footer-copyright {
 	float: right;
-	width: 320px;
+	width: 140px;
+}
+
+/* для index.html */
+.index-logo {
+	margin-top: 60px;
+	width: 368px;
+  height: 204px;
+  margin-left: 290px;
+}
+.features-item {
+  float: left;
+  width: 300px;
+	margin-top: 25px;
+  margin-right: 20px;
+  min-height: 175px;
+}
+.features-item:last-child {
+  margin-right: 0;
+}
+.features {
+  margin-bottom: 72px;
+}
+.index-content {
+  margin-bottom: 35px;
+  padding-top: 50px;
+	padding-left: 80px;
+	padding-right: 80px;
+	min-height: 369px;
+}
+.index-content:last-child {
+	min-height: 346px;
+	margin-bottom: 65px;
+}
+.index-content-left {
+  float: left;
+  width: 380px;
+  min-height: 330px;
+}
+.index-content-right {
+  float: right;
+  width: 300px;
+  min-height: 330px;
+}
+
+/* для catalog.html */
+.catalog-box {
+	margin-bottom: 49px;
+	margin-top: 52px;
+}
+.select {
+	float: left;
+	width: 220px;
+	min-height: 680px;
+}
+.catalog-wrapper {
+	float: right;
+	width: 720px;
+}
+.catalog {
+	font-size: 0;
+	min-height: 620px;
+	margin-bottom: 17px
+}
+.pagination {
+	min-height: 43px;
+}
+.catalog-item {
+	margin-left: 20px;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 14px;
+	min-height: 286px;
+	margin-bottom: 20px;
+}
+.catalog-item p {
+	margin: 0;
+}
+
+
+/* для catalog-item.html */
+.item-box {
+	margin-top: 53px;
+	margin-bottom: 36px;
+}
+.gallery {
+	float: left;
+	width: 460px;	
+}
+.desc {
+	float: right;
+	width: 380px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-transform: uppercase
+}
+.avail {
+	padding-top: 5px;
+}
+.avail-item {
+	float: left;
+}
+.item-article {
+	float: right;
+}
+.price-buy {
+	font-size: 0;
+}
+.price-buy p,
+.price-buy a {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 14px;
+}
+.gallery-list {
+	padding: 0;
+	margin: 0;
+	margin-top: 14px;
+	font-size: 0;
+}
+.gallery-item {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 20px;
+}
+.gallery-item:last-child {
+	margin-right: 0px;
+}
+
+/* для price.html */
+.price-title {
+	font-size: 48px;
+	text-transform: uppercase;
+	line-height: 48px;
+	text-align: center;
+}
+.best-resource {
+	float: left;
+}
+.price-list {
+	float: right;
+}
+.best-resource,
+.price-list{
+	min-height: 270px;
+	width: 460px;
+	margin-bottom: 25px;
+}
+.about-us {
+	clear: both;
+	text-transform: uppercase;
+	margin-bottom: 62px;
+	font-size: 0;
+}
+.about-us h2 {
+	font-size: 24px;
+}
+.about-us p {
+	display: inline-block;
+	vertical-align: top;
+	width: 380px;
+	font-size: 14px;
+}
+.about-us p:first-of-type {
+	margin-right: 100px;
 }

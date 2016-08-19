@@ -4,13 +4,16 @@ body {
 	font-size: 14px;
 	line-height: 24px;
 	font-weight: bold;
+	color: #fff;
+	text-transform: uppercase;
+	background: #000;
 	padding: 0;
 	margin: 0;
 }
 body {
 	/*background: url("/img/_barbershop-index.jpg") no-repeat 50% 0;
 	background-size: 2560px auto;*/
-	background: url("/img/_barbershop-shop.jpg") no-repeat 50% 0;
+	/*background: url("/img/_barbershop-shop.jpg") no-repeat 50% 0;
 	background-size: 1200px auto;*/
 	/*background: url("/img/_barbershop-item.jpg") no-repeat 50% 0;
 	background-size: 1200px auto;*/
@@ -30,11 +33,26 @@ body {
 }
 .main-navigation ul {
 	font-size: 0;
+	margin: 0;
+	padding: 0;
 }
 .main-navigation li {
 	display: inline-block;
 	vertical-align: middle;
+}
+.main-navigation a,
+.login {
 	font-size: 16px;
+	line-height: 20px;
+	font-weight: bold;
+	display: block;
+	padding: 26px 20px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.main-navigation a:hover {
+	background: #242424;
 }
 .logo-block {
 	float: left;

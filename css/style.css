@@ -1,29 +1,38 @@
-html,
 body {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 24px;
 	font-weight: bold;
-	color: #fff;
 	text-transform: uppercase;
-	background: #000;
 	padding: 0;
 	margin: 0;
+	min-width: 960px;
 }
 body {
-	/*background: url("/img/_barbershop-index.jpg") no-repeat 50% 0;
+	/*background: url("../img/_barbershop-index.jpg") no-repeat 50% 0;
 	background-size: 2560px auto;*/
-	/*background: url("/img/_barbershop-shop.jpg") no-repeat 50% 0;
+	/*background: url("../img/_barbershop-shop.jpg") no-repeat 50% 0;
 	background-size: 1200px auto;*/
-	/*background: url("/img/_barbershop-item.jpg") no-repeat 50% 0;
+	/*background: url("../img/_barbershop-item.jpg") no-repeat 50% 0;
 	background-size: 1200px auto;*/
-	/*background: url("/img/_barbershop-price.jpg") no-repeat 50% 0;
+	/*background: url("../img/_barbershop-price.jpg") no-repeat 50% 0;
 	background-size: 1200px auto;*/
 }
 
 /* header */
 .main-header {
 	min-height: 72px;
+  background: #000;*/
+}
+.logo-block {
+	float: left;
+	width: 110px;
+	padding: 22px 20px 19px;
+}
+.user-block {
+	float: right;
+	min-height: 72px;
+	width: 100px;
 }
 .main-navigation {
 	line-height: 20px;
@@ -50,19 +59,26 @@ body {
 	color: #fff;
 	text-decoration: none;
 }
-
-.main-navigation a:hover {
+.login {
+	position: relative;
+  padding-left: 45px;
+}
+.login::before {
+	content: "";
+	position: absolute;
+	top: 27px;
+	left: 14px;
+	width: 20px;
+	height: 15px;
+	background: url("../img/icon-login.png") no-repeat;
+	opacity: 0.3;
+}
+.main-navigation a:hover,
+.login:hover {
 	background: #242424;
 }
-.logo-block {
-	float: left;
-	width: 160px;
-	min-height: 72px;
-}
-.user-block {
-	float: right;
-	min-height: 72px;
-	width: 140px;
+.login:hover::before {
+	opacity: 1;
 }
 
 /* общие */
@@ -112,24 +128,54 @@ h1{
 }
 
 /* для index.html */
+.index-background {
+	background: #000;
+}
 .index-logo {
-	margin-top: 60px;
 	width: 368px;
   height: 204px;
   margin-left: 290px;
+	margin-top: 60px;
+}
+.features {
+	margin-top: 20px;
+  margin-bottom: 72px;
 }
 .features-item {
   float: left;
   width: 300px;
-	margin-top: 25px;
   margin-right: 20px;
   min-height: 175px;
+	color: #fff;
 }
 .features-item:last-child {
   margin-right: 0;
 }
-.features {
-  margin-bottom: 72px;
+.features-name {
+	position: relative;
+	margin: 0;
+	text-align: center;
+	margin-bottom: 26px;
+	padding-bottom: 35px;
+	font-size: 30px;
+	line-height: 42px;
+}
+.features-name::after {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 20px;
+	height: 20px;
+	bottom: 0;
+	left: 50%;
+	margin-left: -10px;
+	background: #fff;
+	transform: rotate(45deg);
+}
+.features-item p {
+	text-align: center;
+	font-size: 14px;
+	line-height: 24px;
 }
 .index-content {
   margin-bottom: 35px;

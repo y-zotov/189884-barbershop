@@ -8,6 +8,12 @@ body {
 	margin: 0;
 	min-width: 960px;
 }
+.index-background {
+	background: #000 url("../img/bg-tint.jpg") no-repeat 50% 72px;
+}
+/*.inner-page {
+	background: #f8f5f2 url("../img/inner-page-background.jpg");
+}*/
 body {
 	/*background: url("../img/_barbershop-index.jpg") no-repeat 50% 0;
 	background-size: 2560px auto;*/
@@ -86,7 +92,8 @@ body {
 	position: absolute;
 	display: block;
 	height: 4px;
-	width: 100%;
+	left: 20px;
+	right: 20px;
 	background: #fff;
 	bottom: 0;
 }
@@ -130,17 +137,24 @@ h1{
 	background: #000;
 	transform: rotate(45deg);
 }
+.breadcrumbs li:last-child::after {
+	display: none;
+}
 .breadcrumbs a {
+	color: #000;
 	text-decoration: none;
 }
 
 /* footer */
 .main-footer {
-  margin-top: 65px;
   padding-top: 60px;
   padding-bottom: 40px;
   color: #fff; 
   background: #252525 url("../img/footer-tint.jpg");
+}
+.inner-page .main-footer {
+	background: #252525 url("../img/inner-page-footer.jpg");
+	padding-top: 55px;
 }
 .footer-contacts {
   float: left;
@@ -207,9 +221,6 @@ h1{
 }
 
 /* для index.html */
-.index-background {
-	background: #000 url("../img/bg-tint.jpg") no-repeat 50% 72px;
-}
 .index-logo {
 	width: 368px;
   height: 204px;
@@ -312,7 +323,7 @@ h1{
 	padding-top: 7px;
 	background: #fff;
 }
-..gallery-content img {
+.gallery-content img {
 	width: 286px;
 	height: 164px;
 }
@@ -378,12 +389,12 @@ h1{
 
 /* для catalog.html */
 .catalog-box {
-	margin-bottom: 49px;
-	margin-top: 52px;
+	margin-bottom: 53px;
+	margin-top: 48px;
 }
 .select {
 	float: left;
-	width: 220px;
+	width: 210px;
 	min-height: 680px;
 }
 .catalog-wrapper {
@@ -391,12 +402,17 @@ h1{
 	width: 720px;
 }
 .catalog {
+	padding-top: 4px;
 	font-size: 0;
 	min-height: 620px;
 	margin-bottom: 17px
 }
 .pagination {
 	min-height: 43px;
+}
+.catalog-item img {
+	width: 220px;
+	height: 165px;
 }
 .catalog-item {
 	margin-left: 20px;
@@ -405,10 +421,51 @@ h1{
 	font-size: 14px;
 	min-height: 286px;
 	margin-bottom: 20px;
+	max-width: 220px;
 }
-.catalog-item p {
+.catalog-item-box {
+	padding: 5px 15px;
+	text-transform: none;
+	line-height: 18px;
+}
+.catalog-item-box a {
+	text-decoration: none;
+	color: #000;
+}
+.catalog-buy .btn,
+.catalog-buy p{
+	display: inline-block;
+}
+.catalog-item .btn {
+	text-transform: uppercase;
+	color: #fff;
+	width: auto;
+	padding: 12px 19px;
+}
+.item-brand {
+	text-transform: uppercase;
+}
+.care-form fieldset {
+	border: none;
 	margin: 0;
+	margin-bottom: 32px;
+	padding: 0;
 }
+.care-form label {
+	display: block;
+	line-height: 18px;
+	margin-bottom: 19px;
+	padding-left: 42px;
+}
+.care-form input {
+	display: none;
+}
+.care-form legend {
+	font-size: 24px;
+	line-height: 30px;
+	margin-bottom: 26px;
+}
+
 
 
 /* для catalog-item.html */
